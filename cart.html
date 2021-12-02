@@ -1,0 +1,344 @@
+<!--Todo 24 cart-->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="utf-8" />
+   <meta
+     name="viewport"
+     content="width=device-width, initial-scale=1, shrink-to-fit=no"
+   />
+   <meta name="description" content="" />
+   <meta name="author" content="" />
+ 
+   <title>Store - Your Best Marketplace</title>
+ 
+   <!-- untuk animasi -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+   <!-- panggil css -->
+   <link href="style/main.css" rel="stylesheet" />
+ </head>
+ 
+ <body>
+   <!-- TODO 5 make Navigation Bar Markup -->
+   <nav
+     class="
+       navbar navbar-expand-lg navbar-light navbar-store
+       fixed-top
+       navbar-fixed-top
+     "
+     data-aos="fade-down"
+   >
+     <div class="container">
+       <a href="/index.html" class="navbar-brand">
+         <img src="/images/logo.svg" alt="Logo" />
+       </a>
+       <button
+         class="navbar-toggler"
+         type="button"
+         data-toggle="collapse"
+         data-target="#navbarResponsive"
+       >
+         <span class="navbar-toggler-icon" id="navbarResponsive">
+           </button>
+           <div class="collapse navbar-collapse" id="navbarResponsive">
+           <ul class="navbar-nav ml-auto">
+             <li class="nav-item ">
+               <a href="/index.html" class="nav-link">Home</a>
+             </li>
+             <li class="nav-item active">
+               <a href="/categories.html" class="nav-link">Category</a>
+             </li>
+             <li class="nav-item">
+               <a href="#" class="nav-link">Rewards</a>
+             </li>
+           </ul>
+           <ul class="navbar-nav d-none d-lg-flex">
+            <li class="nav-item dropdown">
+               <a class="nav-link"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown">
+                     <img
+                     src="/images/icon-user.png" alt=""
+                     class="rounded-circle mr-2 profile-picture"/>Hi, Ms.Axlyn
+               </a>
+               <div class="dropdown-menu">
+                   <a class="dropdown-item" href="/dashboard.html">Dashboard</a>
+                   <a class="dropdown-item" href="/dashboard-account.html"> Settings</a>
+                     <div class="dropdown-divider"></div>
+                   <a class="dropdown-item" href="/">Logout</a>
+               </div>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link d-inline-block mt-2" href="#">
+                  <img src="/images/icon-cart.svg" alt="" />
+                  <div class="card-badge">3</div>
+               </a>
+            </li>
+         </ul>
+         <ul class="navbar-nav d-none d-lg-flex"></ul>
+          
+         <!-- Mobile Menu -->
+         <ul class="navbar-nav d-block d-lg-none">
+           <li class="nav-item">
+             <a class="nav-link" href="#"> Hi, Axlyn </a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link d-inline-block" href="#"> Cart </a>
+           </li>
+         </ul>
+         
+           </div>
+         </span>
+     </div>
+   </nav>
+   
+
+<!--TODO 24 Navigation bar item dan section breadcrumb-->
+<div class="page-content page-details"></div>
+   <section class="store-breadcrumbs"data-aos="fade-down"data-aos-delay="100">
+   <div class="container">
+     <div class="row">
+       <div class="col-12">
+         <nav aria-label="breadcrumb">
+           <ol class="breadcrumb">
+             <li class="breadcrumb-item"><a href="/">Home</a></li>
+             <li class="breadcrumb-item active" aria-current="page">
+               Cart
+             </li>
+           </ol>
+         </nav>
+       </div>
+     </div>
+   </div>
+ </section> 
+<!--TODO 25 cart item markup-->
+<Section class="store-cart">
+  <div class="container">
+    <div class="row" data-aos="fade-up" data-aos-delay="100">
+      <div class="col-12 table-responsive">
+        <table class="table table-borderless table-cart">
+          <thead>
+            <tr>
+              <td>Image</td>
+              <td>Name & Seller</td>
+              <td>Price</td>
+              <td>Remove</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="width: 25%;">
+                <img src="/images/product-cart-1.jpg" alt="cart-image">
+              </td>
+              <td style="width: 30%;">
+                <div class="product-tittle">Ensiklopedia:tubuh manusia</div>
+                <div class="product-subtittle">by Steve Parker</div>
+              </td>
+              <td style="width: 25%;">
+                <div class="product-tittle">$4</div>
+                <div class="product-subtittle">Dolar</div>
+              </td>
+              <td style="width: 20%;">
+                <a href="#" class="btn-remove-cart">Remove</a>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 25%;">
+                <img src="/images/product-cart-2.jpg" alt="cart-image">
+              </td>
+              <td style="width: 30%;">
+                <div class="product-tittle">Ensiklopedia:Antariksa</div>
+                <div class="product-subtittle">by James Trefil</div>
+              </td>
+              <td style="width: 25%;">
+                <div class="product-tittle">$5</div>
+                <div class="product-subtittle">Dolar</div>
+              </td>
+              <td style="width: 20%;">
+                <a href="#" class="btn-remove-cart">Remove</a>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 25%;">
+                <img src="/images/product-cart-3.jpg" alt="cart-image">
+              </td>
+              <td style="width: 30%;">
+                <div class="product-tittle">Oxford Dictionary of english</div>
+                <div class="product-subtittle">by James A. H. Murray</div>
+              </td>
+              <td style="width: 25%;">
+                <div class="product-tittle">$3</div>
+                <div class="product-subtittle">Dolar</div>
+              </td>
+              <td style="width: 20%;">
+                <a href="#" class="btn-remove-cart">Remove</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row" data-aos="fade-up" data-aos-delay="200">
+      <div class="col-12">
+        <hr>
+      </div>
+      <div class="col-12">
+        <h2 class="mb-4">Shipping Details</h2>
+      </div>
+
+    </div>
+    <div class="row mt-3" data-aos="fade-up" data-aos-delay="400">
+      <div class="col-12">
+        <hr />
+      </div>
+      <div class="col-12">
+        <h2>Payment Informations</h2>
+      </div>
+    </div>
+    <div class="row" data-aos="fade-up" data-aos-delay="400">
+      <div class="col-4 col-md-2">
+        <div class="product-title">$6</div>
+        <div class="product-subtitle">Country Tax</div>
+      </div>
+      <div class="col-4 col-md-3">
+        <div class="product-title">$3</div>
+        <div class="product-subtitle">Product Insurance</div>
+      </div>
+      <div class="col-4 col-md-2">
+        <div class="product-title">$9</div>
+        <div class="product-subtitle">Ship to Los angeles</div>
+      </div>
+      <div class="col-4 col-md-2">
+        <div class="product-title">$30</div>
+        <div class="product-subtitle">Total</div>
+      </div>
+      <div class="col-8 col-md-3">
+        <a href="/success.html" class="btn btn-success mt-4 px-4 btn-block">
+        Check out now</a>
+      </div>
+    </div>
+
+    <div class="row mb-2" data-aos="fade-up" data-aos-delay="300">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="addressOne">Address 1</label>
+          <input type="text" class="form-control" id="addressOne" name="addressOne" value=" the Whitley Heights neighborhood of the Hollywood Hills">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="addressTwo">Address 2</label>
+          <input type="text" class="form-control" id="addressTwo" name="addressTwo" value="A1-11">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="province">City</label>
+          <select name="province" id="province" class="form-control">
+            <option value="Los Angeles">Los Angeles,california</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="postalCode">Postal Code</label>
+          <input type="text" 
+          class="form-control"
+          id="postalCode"
+          name="postalCode"
+          value="90007"
+          >
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="country">Country</label>
+          <input type="text" 
+          class="form-control"
+          id="country"
+          name="country"
+          value="United States"
+          >
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="mobile">Mobile</label>
+          <input type="text" 
+          class="form-control"
+          id="mobile"
+          name="mobile"
+          value="17659834506"
+          >
+        </div>
+      </div>
+    </div>
+
+  </div>
+</Section>
+ 
+  
+     
+  
+   <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <p class="pt-4 pb-2">
+            2021 Copyright Store. All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+ 
+   <!-- Bootstrap core JavaScript -->
+   <script src="/vendor/jquery/jquery.slim.min.js"></script>
+   <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+     AOS.init();
+   </script>
+   <script src="/script/navbar-scroll.js">
+ 
+   </script>
+   <script src="/vendor/vue/vue.js"></script>
+   <script>
+     var gallery = new Vue({
+       el: "#gallery",
+       mounted() {
+         AOS.init();
+       },
+       data: {
+         activePhoto: 3,
+         photos: [
+           {
+             id: 1,
+             url: "/images/product-details-1.jpg",
+           },
+           {
+             id: 2,
+             url: "/images/product-details-2.jpg",
+           },
+           {
+             id: 3,
+             url: "/images/product-details-3.jpg",
+           },
+           {
+             id: 4,
+             url: "/images/product-details-4.jpg",
+           },
+         ],
+       },
+       methods: {
+         changeActive(id) {
+           this.activePhoto = id;
+         },
+       },
+     });
+   </script>
+ </body>
+</html>
